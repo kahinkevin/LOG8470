@@ -7,8 +7,13 @@ bool proc1Panne = false;
 bool proc2Panne = false;
 int FCS = 10; // critique
 int ECS = 1; // non critique
+mtype = { FCS, ECS };
 
-proctype
+/* Cannaux  */
+ chan q[N] = [L] of { mtype, byte};
+/*
+
+proctype FCS
 do
 :: begin
 :: /*section non critique*/
@@ -28,8 +33,6 @@ do
 :: y2:=0
 od
 
-#define N	5	/* number of processes in the ring */
-#define L	10	/* 2xN */
 /* Variables globales */
 byte I;
 byte nr_leaders = 0;

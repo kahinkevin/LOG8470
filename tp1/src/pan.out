@@ -1,0 +1,65 @@
+verification result:
+spin -a  hello.pml
+gcc -DMEMLIM=1024 -O2 -DXUSAFE -DSAFETY -DNOCLAIM -w -o pan pan.c
+./pan -m10000 
+Pid: 16606
+
+(Spin Version 6.4.0 -- 19 September 2014)
+	+ Partial Order Reduction
+
+Full statespace search for:
+	never claim         	- (not selected)
+	assertion violations	+
+	cycle checks       	- (disabled by -DSAFETY)
+	invalid end states	+
+
+State-vector 12 byte, depth reached 2, errors: 0
+        3 states, stored
+        0 states, matched
+        3 transitions (= stored+matched)
+        0 atomic steps
+hash conflicts:         0 (resolved)
+
+Stats on memory usage (in Megabytes):
+    0.000	equivalent memory usage for states (stored*(State-vector + overhead))
+    0.293	actual memory usage for states
+  128.000	memory used for hash table (-w24)
+    0.534	memory used for DFS stack (-m10000)
+  128.730	total actual memory usage
+
+
+unreached in proctype main
+	(0 of 2 states)
+
+pan: elapsed time 0 seconds
+No errors found -- did you verify all claims?
+spin -a  leader.pml
+spin: preprocessing failed
+gcc -DMEMLIM=1024 -O2 -DXUSAFE -DSAFETY -DNOCLAIM -w -o pan pan.c
+gcc: error: pan.c: No such file or directory
+gcc: erreur fatale: pas de fichier à l'entrée
+compilation terminée.
+./pan -m10000 
+spin -a  leader.pml
+spin: preprocessing failed
+gcc -DMEMLIM=1024 -O2 -DXUSAFE -DSAFETY -DNOCLAIM -w -o pan pan.c
+gcc: error: pan.c: No such file or directory
+gcc: erreur fatale: pas de fichier à l'entrée
+compilation terminée.
+./pan -m10000 
+spin -a  leader.pml
+spin: preprocessing failed
+gcc -DMEMLIM=1024 -O2 -DXUSAFE -DSAFETY -DNOCLAIM -w -o pan pan.c
+gcc: error: pan.c: No such file or directory
+gcc: erreur fatale: pas de fichier à l'entrée
+compilation terminée.
+./pan -m10000 
+spin -a  leader.pml
+spin: preprocessing failed
+gcc -DMEMLIM=1024 -O2 -DXUSAFE -DSAFETY -DNOCLAIM -w -o pan pan.c
+gcc: error: pan.c: No such file or directory
+gcc: erreur fatale: pas de fichier à l'entrée
+compilation terminée.
+./pan -m10000 
+
+

@@ -10,7 +10,9 @@ chan communication = [L] of { byte};
 bit statutCritique = ACCESSIBLE;
 
 
-/* TODO : CA NE SEXECUTE QU'UNE FOIS ... JE PASSE A AUTRE CHOSE. JE CONSIDERE QUE CA MARCHE POUR LINSTANT */
+/* TODO : CA NE SEXECUTE QU'UNE FOIS ... */
+/* JE PASSE A AUTRE CHOSE. JE CONSIDERE QUE CA */
+/* MARCHE POUR LINSTANT */
 
 
 
@@ -19,7 +21,7 @@ proctype ordonnancer(chan sortie; bit critique) {
 	do
 	::	if
 		::	(statutCritique == ACCESSIBLE) ->
-			sectionCritique :
+			ressourcesM_1 :
 			/* debut de section critique */
 			printf("Acces a la section critique /n", statutCritique);
 			if
@@ -48,4 +50,9 @@ init {
 	run ordonnancer (communication, ACCESSIBLE);
 	run libererCanal (communication);
 }
+
+ltl regleA = { []( (!a1 && a2) || (a1 && !a2) ) }
+ltl regleB = { (a1 || a2) -> ( []statutCritique ) }
+ltl regleC = { p1 -> !p2 }
+/* ltl jaiMesRegles = {||||||} */
 

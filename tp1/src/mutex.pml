@@ -5,35 +5,41 @@
 #define ACCESSIBLE 1
 
 /* Variables globales */
-bit statutEntree = ACCESSIBLE;
-byte n = 0;
-mtype = { FCS, ECS };
-etatFonction = { operationnel, enPanne };
 
 /* Cannaux  */
-chan canal[N] = [L] of { mtype, byte};
+chan communication = [L] of { byte};
+bit statutCritique = ACCESSIBLE;
 
-proctype M_1() {
+proctype ordonnancer(chan sortie; bit critique) {
 	do
-	:: (statutEntree == ACCESSIBLE);
-		statutEntree = BLOQUE;
-		/* section critique */
-		n = n + 1;
-		assert (n == 1);
-		/* fin section critique */
-		n = n - 1;
-		statutEntree = ACCESSIBLE;
-		/* section non-critique */
-		do
-		:: (true) -> skip
-		:: break
-		od
-	od
+	::	if
+		::	(statutCritique == ACCESSIBLE) ->
+			ressource :
+			printf("tour %d", statutCritique);
+			if
+				
+				::	communication!1
+				::	printf("sort"); break
+			fi;
+			statutCritique = !critique
+		fi;
+	od;
+}
+
+// pour canal pseudo-infini
+proctype libererCanal(chan entree) {
+	byte c;
+	do
+	:: entree?c;
+		printf("ecouter pour liberer")
+	od;
 }
 
 init {
-	atomic {
-		run M_1(); run M_1()
-		
-	}
+	statutCritique = BLOQUE;
+	printf("init de l'ordonnancement");
+	run ordonnancer (communication, BLOQUE);
+	run ordonnancer (communication, ACCESSIBLE);
+	run libererCanal (communication);
 }
+

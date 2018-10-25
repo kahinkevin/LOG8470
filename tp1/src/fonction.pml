@@ -1,7 +1,11 @@
 /* Kenny, Kevin, Yujia
  * 
  */
- 
+
+47	ltl ltlA = {[](!a1 || a2)}
+48	ltl ltlB = {<>a1 U !P1}
+49	ltl ltlC = {[](P2 -> (<>a1 || ))}
+
 /* Variables globales */
 bool proc1Panne = false;
 bool proc2Panne = false;

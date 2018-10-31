@@ -11,11 +11,6 @@ bit statutCritique = ACCESSIBLE;
 
 
 /* TODO : CA NE SEXECUTE QU'UNE FOIS ... */
-/* JE PASSE A AUTRE CHOSE. JE CONSIDERE QUE CA */
-/* MARCHE POUR LINSTANT */
-
-
-
 
 proctype ordonnancer(chan sortie; bit critique) {
 	do
@@ -51,8 +46,19 @@ init {
 	run libererCanal (communication);
 }
 
+ltl p0	{ <> (statutCritique > 2) }
+ltl p1	{ <>[] (statutCritique == 1) }
+ltl p2	{ [] (statutCritique == 0 U statutCritique == 1) }
+ltl p3	{ ![] (statutCritique == 0) }
+
+/*
+#define a0
+#define a1
+#define a2
+*/
+/*
 ltl regleA = { []( (!a1 && a2) || (a1 && !a2) ) }
 ltl regleB = { (a1 || a2) -> ( []statutCritique ) }
 ltl regleC = { p1 -> !p2 }
-/* ltl jaiMesRegles = {||||||} */
+*/
 

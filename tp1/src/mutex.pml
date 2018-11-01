@@ -1,64 +1,71 @@
 /* Constantes  */
-#define L 20	/* arbitraire */
-#define BLOQUE 0
-#define ACCESSIBLE 1
+#define L 0	/* arbitraire */
+#define NBR_FONCTIONS 2
 
 /* Canal  */
-chan communication = [L] of { byte};
+chan CC = [L] of {byte};
 
 /* Variables globales */
-bit statutCritique = ACCESSIBLE;
+bit tour = 0;
+bit droitFonction = 0;
+bit actif[NBR_FONCTIONS] = { 0,0 };
+bit panne[NBR_FONCTIONS] = { 0,0 };
 
-
-/* TODO : CA NE SEXECUTE QU'UNE FOIS ... */
-
-proctype ordonnancer(chan sortie; bit critique) {
+proctype executerFonction(chan canalSortie; bit tourCritique) {
 	do
-	::	if
-		::	(statutCritique == ACCESSIBLE) ->
-			ressourcesM_1 :
-			/* debut de section critique */
-			printf("Acces a la section critique /n", statutCritique);
-			if
-				::	communication!ACCESSIBLE
-				::	printf("On sort de la section critique"); break
-			fi;
-			statutCritique = !critique
-			/* fin de section critique */
+		::if
+		:: (tour == tourCritique) ->
+			
+			atomic { /* debut de section critique */
+				actif[tourCritique] = 1;
+				if
+					::canalSortie!1;
+					::break;
+				fi;
+				actif[tourCritique] = 0;
+				tour = !tourCritique;
+			} /* fin de section critique */
+			
+		:: skip -> skip
+		:: skip -> skip
+		:: skip -> skip
+		:: skip -> skip
+		:: break;	// si le if est blocant, on a une chance sur 5 de break. 
+			// Ceci est un nombre arbitraire qui permet de rester
+			// plus longtemps dans le proctype executerFonction.
 		fi;
 	od;
+
 }
 
 // On ecoute le canal de temps en temps, ce qui donne l'illusion d'un canal infini
 proctype libererCanal(chan entree) {
 	byte c;
 	do
-	:: entree?c;
+		::entree?c;
 		printf("ecouter pour liberer")
 	od;
 }
 
 init {
-	//statutCritique = BLOQUE;
 	printf("init de l'ordonnancement");
-	run ordonnancer (communication, BLOQUE);
-	run ordonnancer (communication, ACCESSIBLE);
-	run libererCanal (communication);
+	run executerFonction(CC, tour);
+	run executerFonction(CC, tour);
+	run libererCanal(CC);
+	do
+		::timeout -> panne[tour] == 1 // tomber en panne de maniere non deterministe
+		if
+			::panne[0] == 0; tour = 0;
+			::panne[1] == 0; tour = 1;
+			::else; break;
+		fi;
+	od;
+	
 }
 
-ltl p0	{ <> (statutCritique > 2) }
-ltl p1	{ <>[] (statutCritique == 1) }
-ltl p2	{ [] (statutCritique == 0 U statutCritique == 1) }
-ltl p3	{ ![] (statutCritique == 0) }
-
-/*
-#define a0
-#define a1
-#define a2
-*/
-/*
-ltl regleA = { []( (!a1 && a2) || (a1 && !a2) ) }
-ltl regleB = { (a1 || a2) -> ( []statutCritique ) }
-ltl regleC = { p1 -> !p2 }
-*/
+// 5.3
+ltl regleA		{ []( (!actif[0]) || (!actif[1]) ) }
+ltl regleB1		{ [](<>actif[0] || panne[1]) }
+ltl regleB2		{ [](<>actif[1] || panne[0]) }
+ltl regleC		{ panne[1] -> [](<>actif[0] || panne[0]) }
 

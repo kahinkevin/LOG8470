@@ -55,7 +55,7 @@ init {
 	run executerFonction(CC, tour);
 	run libererCanal(CC);
 	do
-		::timeout -> panne[tour] == 1 // sortir de panne de maniere non deterministe
+		::timeout -> panne[tour] == 1 // 6.4 sortir de panne de maniere non deterministe
 		if
 			::panne[0] == 0; tour = 0;
 			::panne[1] == 0; tour = 1;

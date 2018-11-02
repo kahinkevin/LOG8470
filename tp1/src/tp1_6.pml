@@ -55,13 +55,13 @@ proctype switch() {
 	do	
 		::n_msg_MDS > 0 -> // decompte
 			n_msg_MDS--;
-			if
-				::buff_ECS??m, faible -> buff_MDS!m, faible;
+			if	// ecouter les messages selon la priorite
+				::(empty(buff_FCS) && empty(buff_LGS)) -> buff_ECS??m, faible -> buff_MDS!m, faible; //6.4
 				::buff_FCS??m, elevee -> buff_MDS!m, elevee;
 				::buff_LGS??m, elevee -> buff_MDS!m, elevee;
 				::else ->
-				if
-					::buff_ECS?m,temp_criticite -> buff_MDS!m,temp_criticite;
+				if	// ecrire en priorite
+					::(empty(buff_FCS) && empty(buff_LGS)) -> buff_ECS?m,temp_criticite -> buff_MDS!m,temp_criticite; //6.4
 					::buff_FCS?m,temp_criticite -> buff_MDS!m,temp_criticite;
 					::buff_LGS?m,temp_criticite -> buff_MDS!m,temp_criticite;
 				fi
@@ -76,7 +76,7 @@ proctype destination() {
 	mtype priorite;
 	do
 		::buff_MDS?m, priorite; buff_destination!m, priorite
-		::timeout; break; // sortir si toutes les fonctions sont blocantes
+		::timeout; break; // 6.4 sortir si toutes les fonctions sont blocantes
 	od
 }
 
@@ -87,7 +87,7 @@ init {
 	run switch();
 }
 
-// 6.2
+// 6.3
 byte m; //message du canal
 mtype niv; //niveau de criticite
 

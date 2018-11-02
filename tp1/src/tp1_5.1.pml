@@ -1,5 +1,5 @@
 /* Constantes  */
-#define L 0	/* arbitraire */
+#define L 0	/* pour canal infini */
 #define NBR_FONCTIONS 2
 
 /* Canal  */
@@ -7,24 +7,27 @@ chan CC = [L] of {byte};
 
 /* Variables globales */
 bit tour = 0;
-bit droitFonction = 0;
 bit actif[NBR_FONCTIONS] = { 0,0 };
 bit panne[NBR_FONCTIONS] = { 0,0 };
 
 proctype executerFonction(chan canalSortie; bit tourCritique) {
 	do
 		::if
-		:: (tour == tourCritique) ->
+		:: (tour == tourCritique) -> // si le tour est correctement assigne
 			
-			atomic { /* debut de section critique */
+			atomic { 
+				/* debut de section critique */
+
 				actif[tourCritique] = 1;
-				if
+				if	//ecrire ou tomber en panne
 					::canalSortie!1;
 					::break;
 				fi;
 				actif[tourCritique] = 0;
 				tour = !tourCritique;
-			} /* fin de section critique */
+
+				/* fin de section critique */
+			} 
 			
 		:: skip -> skip
 		:: skip -> skip
@@ -43,17 +46,16 @@ proctype libererCanal(chan entree) {
 	byte c;
 	do
 		::entree?c;
-		printf("ecouter pour liberer")
 	od;
 }
 
 init {
-	printf("init de l'ordonnancement");
+	// lancer et ordonnancer
 	run executerFonction(CC, tour);
 	run executerFonction(CC, tour);
 	run libererCanal(CC);
 	do
-		::timeout -> panne[tour] == 1 // tomber en panne de maniere non deterministe
+		::timeout -> panne[tour] == 1 // sortir de panne de maniere non deterministe
 		if
 			::panne[0] == 0; tour = 0;
 			::panne[1] == 0; tour = 1;

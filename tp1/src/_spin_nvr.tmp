@@ -1,0 +1,21 @@
+never regleA {    /* !((! (buff_destination?[m])) U (((buff_ECS??[m]) || (buff_FCS??[m])) || (buff_LGS??[m]))) */
+accept_init:
+T0_init:
+	do
+	:: (! ((((buff_ECS??[m]) || (buff_FCS??[m])) || (buff_LGS??[m])))) -> goto T0_init
+	:: atomic { (! ((! (buff_destination?[m]))) && ! ((((buff_ECS??[m]) || (buff_FCS??[m])) || (buff_LGS??[m])))) -> assert(!(! ((! (buff_destination?[m]))) && ! ((((buff_ECS??[m]) || (buff_FCS??[m])) || (buff_LGS??[m]))))) }
+	od;
+accept_all:
+	skip
+}
+never regleB {    /* !([] ((! (((buff_ECS?[m,niv]) || (buff_FCS?[m,niv])) || (buff_LGS?[m,niv]))) || (<> (buff_destination??[m,niv])))) */
+T0_init:
+	do
+	:: (! ((! (((buff_ECS?[m,niv]) || (buff_FCS?[m,niv])) || (buff_LGS?[m,niv])))) && ! ((buff_destination??[m,niv]))) -> goto accept_S4
+	:: (1) -> goto T0_init
+	od;
+accept_S4:
+	do
+	:: (! ((buff_destination??[m,niv]))) -> goto accept_S4
+	od;
+}

@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="iso-8859-1"?>
-<!DOCTYPE workspaceElements PUBLIC "-//CPN//DTD CPNXML 1.0//EN" "http://cpntools.org/DTD/6/cpn.dtd">
+<!DOCTYPE workspaceElements PUBLIC "-//CPN//DTD CPNXML 1.0//EN" "http://www.daimi.au.dk/~cpntools/bin/DTD/6/cpn.dtd">
 
 <workspaceElements>
   <generator tool="CPN Tools"
-             version="4.0.1"
+             version="2.2.0"
              format="6"/>
   <cpnet>
     <globbox>
@@ -36,12 +36,10 @@
         </color>
         <color id="ID1412312409">
           <id>INTINF</id>
-          <intinf/>
           <layout>colset INTINF = intinf;</layout>
         </color>
         <color id="ID1412312425">
           <id>TIME</id>
-          <time/>
           <layout>colset TIME = time;</layout>
         </color>
         <color id="ID1412322990">
@@ -56,57 +54,1229 @@
       </block>
     </globbox>
     <page id="ID6">
-      <pageattr name="New Page"/>
-      <constraints/>
+      <pageattr name="Peterson"/>
+      <place id="ID1412342504">
+        <posattr x="-161,000000"
+                 y="256,000000"/>
+        <fillattr colour="White"
+                  pattern=""
+                  filled="false"/>
+        <lineattr colour="Black"
+                  thick="1"
+                  type="Solid"/>
+        <textattr colour="Black"
+                  bold="false"/>
+        <text>p0</text>
+        <ellipse w="60,000000"
+                 h="40,000000"/>
+        <token x="-10,000000"
+               y="0,000000"/>
+        <marking x="0,000000"
+                 y="0,000000"
+                 hidden="false"/>
+        <type id="ID1412342505">
+          <posattr x="-99,000000"
+                   y="232,000000"/>
+          <fillattr colour="White"
+                    pattern="Solid"
+                    filled="false"/>
+          <lineattr colour="Black"
+                    thick="0"
+                    type="Solid"/>
+          <textattr colour="Black"
+                    bold="false"/>
+          <text tool="CPN Tools"
+                version="2.2.0"/>
+        </type>
+        <initmark id="ID1412342506">
+          <posattr x="-104,000000"
+                   y="279,000000"/>
+          <fillattr colour="White"
+                    pattern="Solid"
+                    filled="false"/>
+          <lineattr colour="Black"
+                    thick="0"
+                    type="Solid"/>
+          <textattr colour="Black"
+                    bold="false"/>
+          <text tool="CPN Tools"
+                version="2.2.0"/>
+        </initmark>
+      </place>
+      <place id="ID1412342848">
+        <posattr x="-26,000000"
+                 y="256,000000"/>
+        <fillattr colour="White"
+                  pattern=""
+                  filled="false"/>
+        <lineattr colour="Black"
+                  thick="1"
+                  type="Solid"/>
+        <textattr colour="Black"
+                  bold="false"/>
+        <text>d0 = faux</text>
+        <ellipse w="60,000000"
+                 h="40,000000"/>
+        <token x="-10,000000"
+               y="0,000000"/>
+        <marking x="0,000000"
+                 y="0,000000"
+                 hidden="false"/>
+        <type id="ID1412342849">
+          <posattr x="36,000000"
+                   y="232,000000"/>
+          <fillattr colour="White"
+                    pattern="Solid"
+                    filled="false"/>
+          <lineattr colour="Black"
+                    thick="0"
+                    type="Solid"/>
+          <textattr colour="Black"
+                    bold="false"/>
+          <text tool="CPN Tools"
+                version="2.2.0"/>
+        </type>
+        <initmark id="ID1412342850">
+          <posattr x="31,000000"
+                   y="279,000000"/>
+          <fillattr colour="White"
+                    pattern="Solid"
+                    filled="false"/>
+          <lineattr colour="Black"
+                    thick="0"
+                    type="Solid"/>
+          <textattr colour="Black"
+                    bold="false"/>
+          <text tool="CPN Tools"
+                version="2.2.0"/>
+        </initmark>
+      </place>
+      <place id="ID1412343545">
+        <posattr x="-270,000000"
+                 y="55,000000"/>
+        <fillattr colour="White"
+                  pattern=""
+                  filled="false"/>
+        <lineattr colour="Black"
+                  thick="1"
+                  type="Solid"/>
+        <textattr colour="Black"
+                  bold="false"/>
+        <text>p1</text>
+        <ellipse w="60,000000"
+                 h="40,000000"/>
+        <token x="-10,000000"
+               y="0,000000"/>
+        <marking x="0,000000"
+                 y="0,000000"
+                 hidden="false"/>
+        <type id="ID1412343546">
+          <posattr x="-208,000000"
+                   y="31,000000"/>
+          <fillattr colour="White"
+                    pattern="Solid"
+                    filled="false"/>
+          <lineattr colour="Black"
+                    thick="0"
+                    type="Solid"/>
+          <textattr colour="Black"
+                    bold="false"/>
+          <text tool="CPN Tools"
+                version="2.2.0"/>
+        </type>
+        <initmark id="ID1412343547">
+          <posattr x="-213,000000"
+                   y="78,000000"/>
+          <fillattr colour="White"
+                    pattern="Solid"
+                    filled="false"/>
+          <lineattr colour="Black"
+                    thick="0"
+                    type="Solid"/>
+          <textattr colour="Black"
+                    bold="false"/>
+          <text tool="CPN Tools"
+                version="2.2.0"/>
+        </initmark>
+      </place>
+      <place id="ID1412343898">
+        <posattr x="-26,000000"
+                 y="55,000000"/>
+        <fillattr colour="White"
+                  pattern=""
+                  filled="false"/>
+        <lineattr colour="Black"
+                  thick="1"
+                  type="Solid"/>
+        <textattr colour="Black"
+                  bold="false"/>
+        <text>d0 = vrai</text>
+        <ellipse w="60,000000"
+                 h="40,000000"/>
+        <token x="-10,000000"
+               y="0,000000"/>
+        <marking x="0,000000"
+                 y="0,000000"
+                 hidden="false"/>
+        <type id="ID1412343899">
+          <posattr x="36,000000"
+                   y="31,000000"/>
+          <fillattr colour="White"
+                    pattern="Solid"
+                    filled="false"/>
+          <lineattr colour="Black"
+                    thick="0"
+                    type="Solid"/>
+          <textattr colour="Black"
+                    bold="false"/>
+          <text tool="CPN Tools"
+                version="2.2.0"/>
+        </type>
+        <initmark id="ID1412343900">
+          <posattr x="31,000000"
+                   y="78,000000"/>
+          <fillattr colour="White"
+                    pattern="Solid"
+                    filled="false"/>
+          <lineattr colour="Black"
+                    thick="0"
+                    type="Solid"/>
+          <textattr colour="Black"
+                    bold="false"/>
+          <text tool="CPN Tools"
+                version="2.2.0"/>
+        </initmark>
+      </place>
+      <place id="ID1412345326">
+        <posattr x="-161,000000"
+                 y="-160,000000"/>
+        <fillattr colour="White"
+                  pattern=""
+                  filled="false"/>
+        <lineattr colour="Black"
+                  thick="1"
+                  type="Solid"/>
+        <textattr colour="Black"
+                  bold="false"/>
+        <text>tour = 1</text>
+        <ellipse w="60,000000"
+                 h="40,000000"/>
+        <token x="-10,000000"
+               y="0,000000"/>
+        <marking x="0,000000"
+                 y="0,000000"
+                 hidden="false"/>
+        <type id="ID1412345327">
+          <posattr x="-99,000000"
+                   y="-183,000000"/>
+          <fillattr colour="White"
+                    pattern="Solid"
+                    filled="false"/>
+          <lineattr colour="Black"
+                    thick="0"
+                    type="Solid"/>
+          <textattr colour="Black"
+                    bold="false"/>
+          <text tool="CPN Tools"
+                version="2.2.0"/>
+        </type>
+        <initmark id="ID1412345328">
+          <posattr x="-104,000000"
+                   y="-136,000000"/>
+          <fillattr colour="White"
+                    pattern="Solid"
+                    filled="false"/>
+          <lineattr colour="Black"
+                    thick="0"
+                    type="Solid"/>
+          <textattr colour="Black"
+                    bold="false"/>
+          <text tool="CPN Tools"
+                version="2.2.0"/>
+        </initmark>
+      </place>
+      <place id="ID1412345694">
+        <posattr x="-378,000000"
+                 y="-160,000000"/>
+        <fillattr colour="White"
+                  pattern=""
+                  filled="false"/>
+        <lineattr colour="Black"
+                  thick="1"
+                  type="Solid"/>
+        <textattr colour="Black"
+                  bold="false"/>
+        <text>p2</text>
+        <ellipse w="60,000000"
+                 h="40,000000"/>
+        <token x="-10,000000"
+               y="0,000000"/>
+        <marking x="0,000000"
+                 y="0,000000"
+                 hidden="false"/>
+        <type id="ID1412345695">
+          <posattr x="-316,000000"
+                   y="-183,000000"/>
+          <fillattr colour="White"
+                    pattern="Solid"
+                    filled="false"/>
+          <lineattr colour="Black"
+                    thick="0"
+                    type="Solid"/>
+          <textattr colour="Black"
+                    bold="false"/>
+          <text tool="CPN Tools"
+                version="2.2.0"/>
+        </type>
+        <initmark id="ID1412345696">
+          <posattr x="-321,000000"
+                   y="-136,000000"/>
+          <fillattr colour="White"
+                    pattern="Solid"
+                    filled="false"/>
+          <lineattr colour="Black"
+                    thick="0"
+                    type="Solid"/>
+          <textattr colour="Black"
+                    bold="false"/>
+          <text tool="CPN Tools"
+                version="2.2.0"/>
+        </initmark>
+      </place>
+      <place id="ID1412347189">
+        <posattr x="-378,000000"
+                 y="-368,000000"/>
+        <fillattr colour="White"
+                  pattern=""
+                  filled="false"/>
+        <lineattr colour="Black"
+                  thick="1"
+                  type="Solid"/>
+        <textattr colour="Black"
+                  bold="false"/>
+        <text>p3</text>
+        <ellipse w="60,000000"
+                 h="40,000000"/>
+        <token x="-10,000000"
+               y="0,000000"/>
+        <marking x="0,000000"
+                 y="0,000000"
+                 hidden="false"/>
+        <type id="ID1412347190">
+          <posattr x="-316,000000"
+                   y="-391,000000"/>
+          <fillattr colour="White"
+                    pattern="Solid"
+                    filled="false"/>
+          <lineattr colour="Black"
+                    thick="0"
+                    type="Solid"/>
+          <textattr colour="Black"
+                    bold="false"/>
+          <text tool="CPN Tools"
+                version="2.2.0"/>
+        </type>
+        <initmark id="ID1412347191">
+          <posattr x="-321,000000"
+                   y="-344,000000"/>
+          <fillattr colour="White"
+                    pattern="Solid"
+                    filled="false"/>
+          <lineattr colour="Black"
+                    thick="0"
+                    type="Solid"/>
+          <textattr colour="Black"
+                    bold="false"/>
+          <text tool="CPN Tools"
+                version="2.2.0"/>
+        </initmark>
+      </place>
+      <trans id="ID1412343195"
+             explicit="false">
+        <posattr x="-161,000000"
+                 y="150,000000"/>
+        <fillattr colour="White"
+                  pattern=""
+                  filled="false"/>
+        <lineattr colour="Black"
+                  thick="1"
+                  type="Solid"/>
+        <textattr colour="Black"
+                  bold="false"/>
+        <text>t0</text>
+        <box w="60,000000"
+             h="40,000000"/>
+        <binding x="7,200000"
+                 y="-3,000000"/>
+        <cond id="ID1412343196">
+          <posattr x="-200,000000"
+                   y="181,000000"/>
+          <fillattr colour="White"
+                    pattern="Solid"
+                    filled="false"/>
+          <lineattr colour="Black"
+                    thick="0"
+                    type="Solid"/>
+          <textattr colour="Black"
+                    bold="false"/>
+          <text tool="CPN Tools"
+                version="2.2.0"/>
+        </cond>
+        <time id="ID1412343197">
+          <posattr x="-116,500000"
+                   y="181,000000"/>
+          <fillattr colour="White"
+                    pattern="Solid"
+                    filled="false"/>
+          <lineattr colour="Black"
+                    thick="0"
+                    type="Solid"/>
+          <textattr colour="Black"
+                    bold="false"/>
+          <text tool="CPN Tools"
+                version="2.2.0"/>
+        </time>
+        <code id="ID1412343198">
+          <posattr x="-96,500000"
+                   y="98,000000"/>
+          <fillattr colour="White"
+                    pattern="Solid"
+                    filled="false"/>
+          <lineattr colour="Black"
+                    thick="0"
+                    type="Solid"/>
+          <textattr colour="Black"
+                    bold="false"/>
+          <text tool="CPN Tools"
+                version="2.2.0"/>
+        </code>
+        <channel id="ID1412343199">
+          <posattr x="-224,500000"
+                   y="150,000000"/>
+          <fillattr colour="White"
+                    pattern="Solid"
+                    filled="false"/>
+          <lineattr colour="Black"
+                    thick="0"
+                    type="Solid"/>
+          <textattr colour="Black"
+                    bold="false"/>
+          <text tool="CPN Tools"
+                version="2.2.0"/>
+        </channel>
+      </trans>
+      <trans id="ID1412344254"
+             explicit="false">
+        <posattr x="-270,000000"
+                 y="-64,000000"/>
+        <fillattr colour="White"
+                  pattern=""
+                  filled="false"/>
+        <lineattr colour="Black"
+                  thick="1"
+                  type="Solid"/>
+        <textattr colour="Black"
+                  bold="false"/>
+        <text>t1</text>
+        <box w="60,000000"
+             h="40,000000"/>
+        <binding x="7,200000"
+                 y="-3,000000"/>
+        <cond id="ID1412344255">
+          <posattr x="-309,000000"
+                   y="-33,000000"/>
+          <fillattr colour="White"
+                    pattern="Solid"
+                    filled="false"/>
+          <lineattr colour="Black"
+                    thick="0"
+                    type="Solid"/>
+          <textattr colour="Black"
+                    bold="false"/>
+          <text tool="CPN Tools"
+                version="2.2.0"/>
+        </cond>
+        <time id="ID1412344256">
+          <posattr x="-225,500000"
+                   y="-33,000000"/>
+          <fillattr colour="White"
+                    pattern="Solid"
+                    filled="false"/>
+          <lineattr colour="Black"
+                    thick="0"
+                    type="Solid"/>
+          <textattr colour="Black"
+                    bold="false"/>
+          <text tool="CPN Tools"
+                version="2.2.0"/>
+        </time>
+        <code id="ID1412344257">
+          <posattr x="-205,500000"
+                   y="-116,000000"/>
+          <fillattr colour="White"
+                    pattern="Solid"
+                    filled="false"/>
+          <lineattr colour="Black"
+                    thick="0"
+                    type="Solid"/>
+          <textattr colour="Black"
+                    bold="false"/>
+          <text tool="CPN Tools"
+                version="2.2.0"/>
+        </code>
+        <channel id="ID1412344258">
+          <posattr x="-333,500000"
+                   y="-64,000000"/>
+          <fillattr colour="White"
+                    pattern="Solid"
+                    filled="false"/>
+          <lineattr colour="Black"
+                    thick="0"
+                    type="Solid"/>
+          <textattr colour="Black"
+                    bold="false"/>
+          <text tool="CPN Tools"
+                version="2.2.0"/>
+        </channel>
+      </trans>
+      <trans id="ID1412346432"
+             explicit="false">
+        <posattr x="-270,000000"
+                 y="-255,000000"/>
+        <fillattr colour="White"
+                  pattern=""
+                  filled="false"/>
+        <lineattr colour="Black"
+                  thick="1"
+                  type="Solid"/>
+        <textattr colour="Black"
+                  bold="false"/>
+        <text>t2</text>
+        <box w="60,000000"
+             h="40,000000"/>
+        <binding x="7,200000"
+                 y="-3,000000"/>
+        <cond id="ID1412346433">
+          <posattr x="-309,000000"
+                   y="-224,000000"/>
+          <fillattr colour="White"
+                    pattern="Solid"
+                    filled="false"/>
+          <lineattr colour="Black"
+                    thick="0"
+                    type="Solid"/>
+          <textattr colour="Black"
+                    bold="false"/>
+          <text tool="CPN Tools"
+                version="2.2.0"/>
+        </cond>
+        <time id="ID1412346434">
+          <posattr x="-225,500000"
+                   y="-224,000000"/>
+          <fillattr colour="White"
+                    pattern="Solid"
+                    filled="false"/>
+          <lineattr colour="Black"
+                    thick="0"
+                    type="Solid"/>
+          <textattr colour="Black"
+                    bold="false"/>
+          <text tool="CPN Tools"
+                version="2.2.0"/>
+        </time>
+        <code id="ID1412346435">
+          <posattr x="-205,500000"
+                   y="-307,000000"/>
+          <fillattr colour="White"
+                    pattern="Solid"
+                    filled="false"/>
+          <lineattr colour="Black"
+                    thick="0"
+                    type="Solid"/>
+          <textattr colour="Black"
+                    bold="false"/>
+          <text tool="CPN Tools"
+                version="2.2.0"/>
+        </code>
+        <channel id="ID1412346436">
+          <posattr x="-333,500000"
+                   y="-255,000000"/>
+          <fillattr colour="White"
+                    pattern="Solid"
+                    filled="false"/>
+          <lineattr colour="Black"
+                    thick="0"
+                    type="Solid"/>
+          <textattr colour="Black"
+                    bold="false"/>
+          <text tool="CPN Tools"
+                version="2.2.0"/>
+        </channel>
+      </trans>
+      <trans id="ID1412346809"
+             explicit="false">
+        <posattr x="-493,000000"
+                 y="-255,000000"/>
+        <fillattr colour="White"
+                  pattern=""
+                  filled="false"/>
+        <lineattr colour="Black"
+                  thick="1"
+                  type="Solid"/>
+        <textattr colour="Black"
+                  bold="false"/>
+        <text>t2</text>
+        <box w="60,000000"
+             h="40,000000"/>
+        <binding x="7,200000"
+                 y="-3,000000"/>
+        <cond id="ID1412346810">
+          <posattr x="-532,000000"
+                   y="-224,000000"/>
+          <fillattr colour="White"
+                    pattern="Solid"
+                    filled="false"/>
+          <lineattr colour="Black"
+                    thick="0"
+                    type="Solid"/>
+          <textattr colour="Black"
+                    bold="false"/>
+          <text tool="CPN Tools"
+                version="2.2.0"/>
+        </cond>
+        <time id="ID1412346811">
+          <posattr x="-448,500000"
+                   y="-224,000000"/>
+          <fillattr colour="White"
+                    pattern="Solid"
+                    filled="false"/>
+          <lineattr colour="Black"
+                    thick="0"
+                    type="Solid"/>
+          <textattr colour="Black"
+                    bold="false"/>
+          <text tool="CPN Tools"
+                version="2.2.0"/>
+        </time>
+        <code id="ID1412346812">
+          <posattr x="-428,500000"
+                   y="-307,000000"/>
+          <fillattr colour="White"
+                    pattern="Solid"
+                    filled="false"/>
+          <lineattr colour="Black"
+                    thick="0"
+                    type="Solid"/>
+          <textattr colour="Black"
+                    bold="false"/>
+          <text tool="CPN Tools"
+                version="2.2.0"/>
+        </code>
+        <channel id="ID1412346813">
+          <posattr x="-556,500000"
+                   y="-255,000000"/>
+          <fillattr colour="White"
+                    pattern="Solid"
+                    filled="false"/>
+          <lineattr colour="Black"
+                    thick="0"
+                    type="Solid"/>
+          <textattr colour="Black"
+                    bold="false"/>
+          <text tool="CPN Tools"
+                version="2.2.0"/>
+        </channel>
+      </trans>
+      <trans id="ID1412347572"
+             explicit="false">
+        <posattr x="-378,000000"
+                 y="-467,000000"/>
+        <fillattr colour="White"
+                  pattern=""
+                  filled="false"/>
+        <lineattr colour="Black"
+                  thick="1"
+                  type="Solid"/>
+        <textattr colour="Black"
+                  bold="false"/>
+        <text>end</text>
+        <box w="60,000000"
+             h="40,000000"/>
+        <binding x="7,200000"
+                 y="-3,000000"/>
+        <cond id="ID1412347573">
+          <posattr x="-417,000000"
+                   y="-436,000000"/>
+          <fillattr colour="White"
+                    pattern="Solid"
+                    filled="false"/>
+          <lineattr colour="Black"
+                    thick="0"
+                    type="Solid"/>
+          <textattr colour="Black"
+                    bold="false"/>
+          <text tool="CPN Tools"
+                version="2.2.0"/>
+        </cond>
+        <time id="ID1412347574">
+          <posattr x="-333,500000"
+                   y="-436,000000"/>
+          <fillattr colour="White"
+                    pattern="Solid"
+                    filled="false"/>
+          <lineattr colour="Black"
+                    thick="0"
+                    type="Solid"/>
+          <textattr colour="Black"
+                    bold="false"/>
+          <text tool="CPN Tools"
+                version="2.2.0"/>
+        </time>
+        <code id="ID1412347575">
+          <posattr x="-313,500000"
+                   y="-519,000000"/>
+          <fillattr colour="White"
+                    pattern="Solid"
+                    filled="false"/>
+          <lineattr colour="Black"
+                    thick="0"
+                    type="Solid"/>
+          <textattr colour="Black"
+                    bold="false"/>
+          <text tool="CPN Tools"
+                version="2.2.0"/>
+        </code>
+        <channel id="ID1412347576">
+          <posattr x="-441,500000"
+                   y="-467,000000"/>
+          <fillattr colour="White"
+                    pattern="Solid"
+                    filled="false"/>
+          <lineattr colour="Black"
+                    thick="0"
+                    type="Solid"/>
+          <textattr colour="Black"
+                    bold="false"/>
+          <text tool="CPN Tools"
+                version="2.2.0"/>
+        </channel>
+      </trans>
+      <arc id="ID1412349113"
+           orientation="PtoT"
+           order="1">
+        <posattr x="0,000000"
+                 y="-0,000000"/>
+        <fillattr colour="White"
+                  pattern=""
+                  filled="false"/>
+        <lineattr colour="Black"
+                  thick="1"
+                  type="Solid"/>
+        <textattr colour="Black"
+                  bold="false"/>
+        <arrowattr headsize="1,200000"
+                   currentcyckle="2"/>
+        <transend idref="ID1412343195"/>
+        <placeend idref="ID1412342504"/>
+        <annot id="ID1412349114">
+          <posattr x="-143,000000"
+                   y="203,000000"/>
+          <fillattr colour="White"
+                    pattern="Solid"
+                    filled="false"/>
+          <lineattr colour="Black"
+                    thick="0"
+                    type="Solid"/>
+          <textattr colour="Black"
+                    bold="false"/>
+          <text tool="CPN Tools"
+                version="2.2.0"/>
+        </annot>
+      </arc>
+      <arc id="ID1412349508"
+           orientation="PtoT"
+           order="1">
+        <posattr x="0,000000"
+                 y="-0,000000"/>
+        <fillattr colour="White"
+                  pattern=""
+                  filled="false"/>
+        <lineattr colour="Black"
+                  thick="1"
+                  type="Solid"/>
+        <textattr colour="Black"
+                  bold="false"/>
+        <arrowattr headsize="1,200000"
+                   currentcyckle="2"/>
+        <transend idref="ID1412343195"/>
+        <placeend idref="ID1412342848"/>
+        <annot id="ID1412349509">
+          <posattr x="-102,000000"
+                   y="220,000000"/>
+          <fillattr colour="White"
+                    pattern="Solid"
+                    filled="false"/>
+          <lineattr colour="Black"
+                    thick="0"
+                    type="Solid"/>
+          <textattr colour="Black"
+                    bold="false"/>
+          <text tool="CPN Tools"
+                version="2.2.0"/>
+        </annot>
+      </arc>
+      <arc id="ID1412349906"
+           orientation="TtoP"
+           order="1">
+        <posattr x="0,000000"
+                 y="-0,000000"/>
+        <fillattr colour="White"
+                  pattern=""
+                  filled="false"/>
+        <lineattr colour="Black"
+                  thick="1"
+                  type="Solid"/>
+        <textattr colour="Black"
+                  bold="false"/>
+        <arrowattr headsize="1,200000"
+                   currentcyckle="2"/>
+        <transend idref="ID1412343195"/>
+        <placeend idref="ID1412343545"/>
+        <annot id="ID1412349907">
+          <posattr x="-230,000000"
+                   y="114,000000"/>
+          <fillattr colour="White"
+                    pattern="Solid"
+                    filled="false"/>
+          <lineattr colour="Black"
+                    thick="0"
+                    type="Solid"/>
+          <textattr colour="Black"
+                    bold="false"/>
+          <text tool="CPN Tools"
+                version="2.2.0"/>
+        </annot>
+      </arc>
+      <arc id="ID1412350307"
+           orientation="TtoP"
+           order="1">
+        <posattr x="0,000000"
+                 y="-0,000000"/>
+        <fillattr colour="White"
+                  pattern=""
+                  filled="false"/>
+        <lineattr colour="Black"
+                  thick="1"
+                  type="Solid"/>
+        <textattr colour="Black"
+                  bold="false"/>
+        <arrowattr headsize="1,200000"
+                   currentcyckle="2"/>
+        <transend idref="ID1412343195"/>
+        <placeend idref="ID1412343898"/>
+        <annot id="ID1412350308">
+          <posattr x="-79,000000"
+                   y="115,000000"/>
+          <fillattr colour="White"
+                    pattern="Solid"
+                    filled="false"/>
+          <lineattr colour="Black"
+                    thick="0"
+                    type="Solid"/>
+          <textattr colour="Black"
+                    bold="false"/>
+          <text tool="CPN Tools"
+                version="2.2.0"/>
+        </annot>
+      </arc>
+      <arc id="ID1412351114"
+           orientation="PtoT"
+           order="1">
+        <posattr x="0,000000"
+                 y="-0,000000"/>
+        <fillattr colour="White"
+                  pattern=""
+                  filled="false"/>
+        <lineattr colour="Black"
+                  thick="1"
+                  type="Solid"/>
+        <textattr colour="Black"
+                  bold="false"/>
+        <arrowattr headsize="1,200000"
+                   currentcyckle="2"/>
+        <transend idref="ID1412344254"/>
+        <placeend idref="ID1412343545"/>
+        <annot id="ID1412351115">
+          <posattr x="-252,000000"
+                   y="-5,000000"/>
+          <fillattr colour="White"
+                    pattern="Solid"
+                    filled="false"/>
+          <lineattr colour="Black"
+                    thick="0"
+                    type="Solid"/>
+          <textattr colour="Black"
+                    bold="false"/>
+          <text tool="CPN Tools"
+                version="2.2.0"/>
+        </annot>
+      </arc>
+      <arc id="ID1412351933"
+           orientation="TtoP"
+           order="1">
+        <posattr x="0,000000"
+                 y="-0,000000"/>
+        <fillattr colour="White"
+                  pattern=""
+                  filled="false"/>
+        <lineattr colour="Black"
+                  thick="2"
+                  type="Solid"/>
+        <textattr colour="Black"
+                  bold="false"/>
+        <arrowattr headsize="1,200000"
+                   currentcyckle="2"/>
+        <transend idref="ID1412344254"/>
+        <placeend idref="ID1412345694"/>
+        <annot id="ID1412351934">
+          <posattr x="-338,000000"
+                   y="-100,000000"/>
+          <fillattr colour="White"
+                    pattern="Solid"
+                    filled="false"/>
+          <lineattr colour="Black"
+                    thick="0"
+                    type="Solid"/>
+          <textattr colour="Black"
+                    bold="false"/>
+          <text tool="CPN Tools"
+                version="2.2.0"/>
+        </annot>
+      </arc>
+      <arc id="ID1412353188"
+           orientation="TtoP"
+           order="1">
+        <posattr x="0,000000"
+                 y="-0,000000"/>
+        <fillattr colour="White"
+                  pattern=""
+                  filled="false"/>
+        <lineattr colour="Black"
+                  thick="1"
+                  type="Solid"/>
+        <textattr colour="Black"
+                  bold="false"/>
+        <arrowattr headsize="1,200000"
+                   currentcyckle="2"/>
+        <transend idref="ID1412344254"/>
+        <placeend idref="ID1412345326"/>
+        <annot id="ID1412353189">
+          <posattr x="-201,000000"
+                   y="-100,000000"/>
+          <fillattr colour="White"
+                    pattern="Solid"
+                    filled="false"/>
+          <lineattr colour="Black"
+                    thick="0"
+                    type="Solid"/>
+          <textattr colour="Black"
+                    bold="false"/>
+          <text tool="CPN Tools"
+                version="2.2.0"/>
+        </annot>
+      </arc>
+      <arc id="ID1412354037"
+           orientation="PtoT"
+           order="1">
+        <posattr x="0,000000"
+                 y="-0,000000"/>
+        <fillattr colour="White"
+                  pattern=""
+                  filled="false"/>
+        <lineattr colour="Black"
+                  thick="1"
+                  type="Solid"/>
+        <textattr colour="Black"
+                  bold="false"/>
+        <arrowattr headsize="1,200000"
+                   currentcyckle="2"/>
+        <transend idref="ID1412346432"/>
+        <placeend idref="ID1412345694"/>
+        <annot id="ID1412354038">
+          <posattr x="-314,000000"
+                   y="-192,000000"/>
+          <fillattr colour="White"
+                    pattern="Solid"
+                    filled="false"/>
+          <lineattr colour="Black"
+                    thick="0"
+                    type="Solid"/>
+          <textattr colour="Black"
+                    bold="false"/>
+          <text tool="CPN Tools"
+                version="2.2.0"/>
+        </annot>
+      </arc>
+      <arc id="ID1412354468"
+           orientation="PtoT"
+           order="1">
+        <posattr x="0,000000"
+                 y="-0,000000"/>
+        <fillattr colour="White"
+                  pattern=""
+                  filled="false"/>
+        <lineattr colour="Black"
+                  thick="1"
+                  type="Solid"/>
+        <textattr colour="Black"
+                  bold="false"/>
+        <arrowattr headsize="1,200000"
+                   currentcyckle="2"/>
+        <transend idref="ID1412346809"/>
+        <placeend idref="ID1412345694"/>
+        <annot id="ID1412354469">
+          <posattr x="-422,000000"
+                   y="-219,000000"/>
+          <fillattr colour="White"
+                    pattern="Solid"
+                    filled="false"/>
+          <lineattr colour="Black"
+                    thick="0"
+                    type="Solid"/>
+          <textattr colour="Black"
+                    bold="false"/>
+          <text tool="CPN Tools"
+                version="2.2.0"/>
+        </annot>
+      </arc>
+      <arc id="ID1412354902"
+           orientation="TtoP"
+           order="1">
+        <posattr x="0,000000"
+                 y="-0,000000"/>
+        <fillattr colour="White"
+                  pattern=""
+                  filled="false"/>
+        <lineattr colour="Black"
+                  thick="1"
+                  type="Solid"/>
+        <textattr colour="Black"
+                  bold="false"/>
+        <arrowattr headsize="1,200000"
+                   currentcyckle="2"/>
+        <transend idref="ID1412346809"/>
+        <placeend idref="ID1412347189"/>
+        <annot id="ID1412354903">
+          <posattr x="-421,000000"
+                   y="-300,000000"/>
+          <fillattr colour="White"
+                    pattern="Solid"
+                    filled="false"/>
+          <lineattr colour="Black"
+                    thick="0"
+                    type="Solid"/>
+          <textattr colour="Black"
+                    bold="false"/>
+          <text tool="CPN Tools"
+                version="2.2.0"/>
+        </annot>
+      </arc>
+      <arc id="ID1412356219"
+           orientation="TtoP"
+           order="1">
+        <posattr x="0,000000"
+                 y="-0,000000"/>
+        <fillattr colour="White"
+                  pattern=""
+                  filled="false"/>
+        <lineattr colour="Black"
+                  thick="1"
+                  type="Solid"/>
+        <textattr colour="Black"
+                  bold="false"/>
+        <arrowattr headsize="1,200000"
+                   currentcyckle="2"/>
+        <transend idref="ID1412346432"/>
+        <placeend idref="ID1412347189"/>
+        <annot id="ID1412356220">
+          <posattr x="-311,000000"
+                   y="-326,000000"/>
+          <fillattr colour="White"
+                    pattern="Solid"
+                    filled="false"/>
+          <lineattr colour="Black"
+                    thick="0"
+                    type="Solid"/>
+          <textattr colour="Black"
+                    bold="false"/>
+          <text tool="CPN Tools"
+                version="2.2.0"/>
+        </annot>
+      </arc>
+      <arc id="ID1412356665"
+           orientation="PtoT"
+           order="1">
+        <posattr x="0,000000"
+                 y="-0,000000"/>
+        <fillattr colour="White"
+                  pattern=""
+                  filled="false"/>
+        <lineattr colour="Black"
+                  thick="1"
+                  type="Solid"/>
+        <textattr colour="Black"
+                  bold="false"/>
+        <arrowattr headsize="1,200000"
+                   currentcyckle="2"/>
+        <transend idref="ID1412347572"/>
+        <placeend idref="ID1412347189"/>
+        <annot id="ID1412356666">
+          <posattr x="-360,000000"
+                   y="-418,000000"/>
+          <fillattr colour="White"
+                    pattern="Solid"
+                    filled="false"/>
+          <lineattr colour="Black"
+                    thick="0"
+                    type="Solid"/>
+          <textattr colour="Black"
+                    bold="false"/>
+          <text tool="CPN Tools"
+                version="2.2.0"/>
+        </annot>
+      </arc>
+      <arc id="ID1412361282"
+           orientation="TtoP"
+           order="1">
+        <posattr x="0,000000"
+                 y="-0,000000"/>
+        <fillattr colour="White"
+                  pattern=""
+                  filled="false"/>
+        <lineattr colour="Black"
+                  thick="1"
+                  type="Solid"/>
+        <textattr colour="Black"
+                  bold="false"/>
+        <arrowattr headsize="1,200000"
+                   currentcyckle="2"/>
+        <transend idref="ID1412347572"/>
+        <placeend idref="ID1412342504"/>
+        <bendpoint id="ID1412361284"
+                   serial="1">
+          <posattr x="-561,000000"
+                   y="-467,000000"/>
+          <fillattr colour="White"
+                    pattern="Solid"
+                    filled="false"/>
+          <lineattr colour="Black"
+                    thick="0"
+                    type="Solid"/>
+          <textattr colour="Black"
+                    bold="false"/>
+        </bendpoint>
+        <bendpoint id="ID1412361285"
+                   serial="2">
+          <posattr x="-561,000000"
+                   y="256,000000"/>
+          <fillattr colour="White"
+                    pattern="Solid"
+                    filled="false"/>
+          <lineattr colour="Black"
+                    thick="0"
+                    type="Solid"/>
+          <textattr colour="Black"
+                    bold="false"/>
+        </bendpoint>
+        <annot id="ID1412361283">
+          <posattr x="-485,000000"
+                   y="-456,000000"/>
+          <fillattr colour="White"
+                    pattern="Solid"
+                    filled="false"/>
+          <lineattr colour="Black"
+                    thick="0"
+                    type="Solid"/>
+          <textattr colour="Black"
+                    bold="false"/>
+          <text tool="CPN Tools"
+                version="2.2.0"/>
+        </annot>
+      </arc>
+      <hguideline id="ID1412423583"
+                  y="-55,000000">
+        <guideline_elm idref="ID1412343545"/>
+        <guideline_elm idref="ID1412343898"/>
+      </hguideline>
+      <hguideline id="ID1412424360"
+                  y="-150,000000">
+        <guideline_elm idref="ID1412343195"/>
+      </hguideline>
+      <hguideline id="ID1412425140"
+                  y="64,000000">
+        <guideline_elm idref="ID1412344254"/>
+      </hguideline>
+      <hguideline id="ID1412425930"
+                  y="160,000000">
+        <guideline_elm idref="ID1412345326"/>
+        <guideline_elm idref="ID1412345694"/>
+      </hguideline>
+      <hguideline id="ID1412429082"
+                  y="255,000000">
+        <guideline_elm idref="ID1412346432"/>
+        <guideline_elm idref="ID1412346809"/>
+      </hguideline>
+      <hguideline id="ID1412429930"
+                  y="368,000000">
+        <guideline_elm idref="ID1412347189"/>
+      </hguideline>
+      <hguideline id="ID1412434769"
+                  y="467,000000">
+        <guideline_elm idref="ID1412347572"/>
+        <guideline_elm idref="ID1412361284"/>
+      </hguideline>
+      <hguideline id="ID1412439619"
+                  y="-256,000000">
+        <guideline_elm idref="ID1412342504"/>
+        <guideline_elm idref="ID1412342848"/>
+        <guideline_elm idref="ID1412361285"/>
+      </hguideline>
+      <vguideline id="ID1412444685"
+                  x="-161,000000">
+        <guideline_elm idref="ID1412342504"/>
+        <guideline_elm idref="ID1412345326"/>
+        <guideline_elm idref="ID1412343195"/>
+      </vguideline>
+      <vguideline id="ID1412445697"
+                  x="-26,000000">
+        <guideline_elm idref="ID1412342848"/>
+        <guideline_elm idref="ID1412343898"/>
+      </vguideline>
+      <vguideline id="ID1412448824"
+                  x="-270,000000">
+        <guideline_elm idref="ID1412343545"/>
+        <guideline_elm idref="ID1412344254"/>
+        <guideline_elm idref="ID1412346432"/>
+      </vguideline>
+      <vguideline id="ID1412450725"
+                  x="-378,000000">
+        <guideline_elm idref="ID1412345694"/>
+        <guideline_elm idref="ID1412347189"/>
+        <guideline_elm idref="ID1412347572"/>
+      </vguideline>
+      <vguideline id="ID1412454370"
+                  x="-493,000000">
+        <guideline_elm idref="ID1412346809"/>
+      </vguideline>
     </page>
     <instances>
       <instance id="ID2149"
                 page="ID6"/>
     </instances>
     <options>
-      <option name="realtimestamp">
-        <value>
-          <boolean>false</boolean>
-        </value>
-      </option>
-      <option name="fair_be">
-        <value>
-          <boolean>false</boolean>
-        </value>
-      </option>
-      <option name="global_fairness">
-        <value>
-          <boolean>false</boolean>
-        </value>
-      </option>
       <option name="outputdirectory">
         <value>
           <text>&lt;same as model&gt;</text>
-        </value>
-      </option>
-      <option name="extensions.10002.enable">
-        <value>
-          <boolean>true</boolean>
-        </value>
-      </option>
-      <option name="extensions.10005.enable">
-        <value>
-          <boolean>true</boolean>
-        </value>
-      </option>
-      <option name="extensions.10003.enable">
-        <value>
-          <boolean>true</boolean>
-        </value>
-      </option>
-      <option name="extensions.10006.enable">
-        <value>
-          <boolean>true</boolean>
-        </value>
-      </option>
-      <option name="extensions.10001.enable">
-        <value>
-          <boolean>true</boolean>
         </value>
       </option>
       <option name="repavg">
@@ -307,15 +1477,15 @@
     </options>
     <binders>
       <cpnbinder id="ID2222"
-                 x="257"
-                 y="122"
-                 width="600"
-                 height="400">
+                 x="217"
+                 y="195"
+                 width="930"
+                 height="755">
         <sheets>
           <cpnsheet id="ID2215"
-                    panx="-6.000000"
-                    pany="-5.000000"
-                    zoom="1.000000"
+                    panx="-305,000000"
+                    pany="215,000000"
+                    zoom="1,000000"
                     instance="ID2149">
             <zorder>
               <position value="0"/>
@@ -333,9 +1503,6 @@
       <IndexNode expanded="false"/>
       <IndexNode expanded="false">
         <IndexNode expanded="false"/>
-        <IndexNode expanded="false"/>
-        <IndexNode expanded="false"/>
-        <IndexNode expanded="false"/>
         <IndexNode expanded="false">
           <IndexNode expanded="false">
             <IndexNode expanded="false">
@@ -384,17 +1551,12 @@
             <IndexNode expanded="false"/>
             <IndexNode expanded="false"/>
           </IndexNode>
-        </IndexNode>
-        <IndexNode expanded="false">
-          <IndexNode expanded="false"/>
-          <IndexNode expanded="false"/>
-          <IndexNode expanded="false"/>
-          <IndexNode expanded="false"/>
-          <IndexNode expanded="false"/>
         </IndexNode>
       </IndexNode>
-      <IndexNode expanded="false"/>
       <IndexNode expanded="false">
+        <IndexNode expanded="false"/>
+      </IndexNode>
+      <IndexNode expanded="true">
         <IndexNode expanded="false">
           <IndexNode expanded="true"/>
           <IndexNode expanded="true"/>

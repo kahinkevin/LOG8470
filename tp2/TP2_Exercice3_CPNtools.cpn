@@ -7,6 +7,30 @@
              format="6"/>
   <cpnet>
     <globbox>
+      <errordecl id="ID1412586372">var</errordecl>
+      <color id="ID1412514974">
+        <id>DI</id>
+        <bool/>
+        <layout>colset DI = bool;</layout>
+      </color>
+      <color id="ID1412512930">
+        <id>I</id>
+        <int/>
+        <layout>colset I = int;</layout>
+      </color>
+      <block id="ID1412503925">
+        <id>colset IxDI = product i * di;</id>
+      </block>
+      <ml id="ID1412561299">val initQ =
+1&apos;(1,false)
+        <layout>val initQ =
+1&apos;(1,false)</layout>
+      </ml>
+      <ml id="ID1412551009">val initP =
+1&apos;(0,false)
+        <layout>val initP =
+1&apos;(0,false)</layout>
+      </ml>
       <block id="ID1412310166">
         <id>Standard priorities</id>
         <ml id="ID1412310255">val P_HIGH = 100;
@@ -56,7 +80,7 @@
     <page id="ID6">
       <pageattr name="Peterson"/>
       <place id="ID1412342504">
-        <posattr x="-161,000000"
+        <posattr x="-152,000000"
                  y="256,000000"/>
         <fillattr colour="White"
                   pattern=""
@@ -75,7 +99,7 @@
                  y="0,000000"
                  hidden="false"/>
         <type id="ID1412342505">
-          <posattr x="-99,000000"
+          <posattr x="-114,000000"
                    y="232,000000"/>
           <fillattr colour="White"
                     pattern="Solid"
@@ -86,10 +110,10 @@
           <textattr colour="Black"
                     bold="false"/>
           <text tool="CPN Tools"
-                version="2.2.0"/>
+                version="2.2.0">IxDI</text>
         </type>
         <initmark id="ID1412342506">
-          <posattr x="-104,000000"
+          <posattr x="-113,500000"
                    y="279,000000"/>
           <fillattr colour="White"
                     pattern="Solid"
@@ -100,7 +124,7 @@
           <textattr colour="Black"
                     bold="false"/>
           <text tool="CPN Tools"
-                version="2.2.0"/>
+                version="2.2.0">initP</text>
         </initmark>
       </place>
       <place id="ID1412342848">
@@ -153,7 +177,7 @@
       </place>
       <place id="ID1412343545">
         <posattr x="-270,000000"
-                 y="55,000000"/>
+                 y="44,000000"/>
         <fillattr colour="White"
                   pattern=""
                   filled="false"/>
@@ -172,7 +196,7 @@
                  hidden="false"/>
         <type id="ID1412343546">
           <posattr x="-208,000000"
-                   y="31,000000"/>
+                   y="20,000000"/>
           <fillattr colour="White"
                     pattern="Solid"
                     filled="false"/>
@@ -186,7 +210,7 @@
         </type>
         <initmark id="ID1412343547">
           <posattr x="-213,000000"
-                   y="78,000000"/>
+                   y="67,000000"/>
           <fillattr colour="White"
                     pattern="Solid"
                     filled="false"/>
@@ -201,7 +225,7 @@
       </place>
       <place id="ID1412343898">
         <posattr x="-26,000000"
-                 y="55,000000"/>
+                 y="44,000000"/>
         <fillattr colour="White"
                   pattern=""
                   filled="false"/>
@@ -220,7 +244,7 @@
                  hidden="false"/>
         <type id="ID1412343899">
           <posattr x="36,000000"
-                   y="31,000000"/>
+                   y="20,000000"/>
           <fillattr colour="White"
                     pattern="Solid"
                     filled="false"/>
@@ -234,7 +258,7 @@
         </type>
         <initmark id="ID1412343900">
           <posattr x="31,000000"
-                   y="78,000000"/>
+                   y="67,000000"/>
           <fillattr colour="White"
                     pattern="Solid"
                     filled="false"/>
@@ -248,7 +272,7 @@
         </initmark>
       </place>
       <place id="ID1412345326">
-        <posattr x="-161,000000"
+        <posattr x="-152,000000"
                  y="-160,000000"/>
         <fillattr colour="White"
                   pattern=""
@@ -267,7 +291,7 @@
                  y="0,000000"
                  hidden="false"/>
         <type id="ID1412345327">
-          <posattr x="-99,000000"
+          <posattr x="-90,000000"
                    y="-183,000000"/>
           <fillattr colour="White"
                     pattern="Solid"
@@ -281,7 +305,7 @@
                 version="2.2.0"/>
         </type>
         <initmark id="ID1412345328">
-          <posattr x="-104,000000"
+          <posattr x="-95,000000"
                    y="-136,000000"/>
           <fillattr colour="White"
                     pattern="Solid"
@@ -393,7 +417,7 @@
       </place>
       <trans id="ID1412343195"
              explicit="false">
-        <posattr x="-161,000000"
+        <posattr x="-152,000000"
                  y="150,000000"/>
         <fillattr colour="White"
                   pattern=""
@@ -409,7 +433,7 @@
         <binding x="7,200000"
                  y="-3,000000"/>
         <cond id="ID1412343196">
-          <posattr x="-200,000000"
+          <posattr x="-191,000000"
                    y="181,000000"/>
           <fillattr colour="White"
                     pattern="Solid"
@@ -423,7 +447,7 @@
                 version="2.2.0"/>
         </cond>
         <time id="ID1412343197">
-          <posattr x="-116,500000"
+          <posattr x="-107,500000"
                    y="181,000000"/>
           <fillattr colour="White"
                     pattern="Solid"
@@ -437,7 +461,7 @@
                 version="2.2.0"/>
         </time>
         <code id="ID1412343198">
-          <posattr x="-96,500000"
+          <posattr x="-87,500000"
                    y="98,000000"/>
           <fillattr colour="White"
                     pattern="Solid"
@@ -451,7 +475,7 @@
                 version="2.2.0"/>
         </code>
         <channel id="ID1412343199">
-          <posattr x="-224,500000"
+          <posattr x="-215,500000"
                    y="150,000000"/>
           <fillattr colour="White"
                     pattern="Solid"
@@ -551,7 +575,7 @@
                   type="Solid"/>
         <textattr colour="Black"
                   bold="false"/>
-        <text>t2</text>
+        <text>tour = 0</text>
         <box w="60,000000"
              h="40,000000"/>
         <binding x="7,200000"
@@ -615,7 +639,7 @@
       </trans>
       <trans id="ID1412346809"
              explicit="false">
-        <posattr x="-493,000000"
+        <posattr x="-479,000000"
                  y="-255,000000"/>
         <fillattr colour="White"
                   pattern=""
@@ -625,13 +649,13 @@
                   type="Solid"/>
         <textattr colour="Black"
                   bold="false"/>
-        <text>t2</text>
+        <text>!d1</text>
         <box w="60,000000"
              h="40,000000"/>
         <binding x="7,200000"
                  y="-3,000000"/>
         <cond id="ID1412346810">
-          <posattr x="-532,000000"
+          <posattr x="-518,000000"
                    y="-224,000000"/>
           <fillattr colour="White"
                     pattern="Solid"
@@ -645,7 +669,7 @@
                 version="2.2.0"/>
         </cond>
         <time id="ID1412346811">
-          <posattr x="-448,500000"
+          <posattr x="-434,500000"
                    y="-224,000000"/>
           <fillattr colour="White"
                     pattern="Solid"
@@ -659,7 +683,7 @@
                 version="2.2.0"/>
         </time>
         <code id="ID1412346812">
-          <posattr x="-428,500000"
+          <posattr x="-414,500000"
                    y="-307,000000"/>
           <fillattr colour="White"
                     pattern="Solid"
@@ -673,7 +697,7 @@
                 version="2.2.0"/>
         </code>
         <channel id="ID1412346813">
-          <posattr x="-556,500000"
+          <posattr x="-542,500000"
                    y="-255,000000"/>
           <fillattr colour="White"
                     pattern="Solid"
@@ -779,7 +803,7 @@
         <transend idref="ID1412343195"/>
         <placeend idref="ID1412342504"/>
         <annot id="ID1412349114">
-          <posattr x="-143,000000"
+          <posattr x="-134,000000"
                    y="203,000000"/>
           <fillattr colour="White"
                     pattern="Solid"
@@ -811,7 +835,7 @@
         <transend idref="ID1412343195"/>
         <placeend idref="ID1412342848"/>
         <annot id="ID1412349509">
-          <posattr x="-102,000000"
+          <posattr x="-99,000000"
                    y="220,000000"/>
           <fillattr colour="White"
                     pattern="Solid"
@@ -843,8 +867,8 @@
         <transend idref="ID1412343195"/>
         <placeend idref="ID1412343545"/>
         <annot id="ID1412349907">
-          <posattr x="-230,000000"
-                   y="114,000000"/>
+          <posattr x="-226,000000"
+                   y="109,000000"/>
           <fillattr colour="White"
                     pattern="Solid"
                     filled="false"/>
@@ -875,8 +899,8 @@
         <transend idref="ID1412343195"/>
         <placeend idref="ID1412343898"/>
         <annot id="ID1412350308">
-          <posattr x="-79,000000"
-                   y="115,000000"/>
+          <posattr x="-74,000000"
+                   y="109,000000"/>
           <fillattr colour="White"
                     pattern="Solid"
                     filled="false"/>
@@ -908,7 +932,7 @@
         <placeend idref="ID1412343545"/>
         <annot id="ID1412351115">
           <posattr x="-252,000000"
-                   y="-5,000000"/>
+                   y="-10,000000"/>
           <fillattr colour="White"
                     pattern="Solid"
                     filled="false"/>
@@ -971,7 +995,7 @@
         <transend idref="ID1412344254"/>
         <placeend idref="ID1412345326"/>
         <annot id="ID1412353189">
-          <posattr x="-201,000000"
+          <posattr x="-196,000000"
                    y="-100,000000"/>
           <fillattr colour="White"
                     pattern="Solid"
@@ -1035,7 +1059,7 @@
         <transend idref="ID1412346809"/>
         <placeend idref="ID1412345694"/>
         <annot id="ID1412354469">
-          <posattr x="-422,000000"
+          <posattr x="-414,000000"
                    y="-219,000000"/>
           <fillattr colour="White"
                     pattern="Solid"
@@ -1067,7 +1091,7 @@
         <transend idref="ID1412346809"/>
         <placeend idref="ID1412347189"/>
         <annot id="ID1412354903">
-          <posattr x="-421,000000"
+          <posattr x="-413,000000"
                    y="-300,000000"/>
           <fillattr colour="White"
                     pattern="Solid"
@@ -1204,7 +1228,7 @@
         </annot>
       </arc>
       <hguideline id="ID1412423583"
-                  y="-55,000000">
+                  y="-44,000000">
         <guideline_elm idref="ID1412343545"/>
         <guideline_elm idref="ID1412343898"/>
       </hguideline>
@@ -1242,7 +1266,7 @@
         <guideline_elm idref="ID1412361285"/>
       </hguideline>
       <vguideline id="ID1412444685"
-                  x="-161,000000">
+                  x="-152,000000">
         <guideline_elm idref="ID1412342504"/>
         <guideline_elm idref="ID1412345326"/>
         <guideline_elm idref="ID1412343195"/>
@@ -1265,7 +1289,7 @@
         <guideline_elm idref="ID1412347572"/>
       </vguideline>
       <vguideline id="ID1412454370"
-                  x="-493,000000">
+                  x="-479,000000">
         <guideline_elm idref="ID1412346809"/>
       </vguideline>
     </page>
@@ -1477,14 +1501,14 @@
     </options>
     <binders>
       <cpnbinder id="ID2222"
-                 x="217"
-                 y="195"
+                 x="303"
+                 y="216"
                  width="930"
                  height="755">
         <sheets>
           <cpnsheet id="ID2215"
-                    panx="-305,000000"
-                    pany="215,000000"
+                    panx="-15,000000"
+                    pany="8,000000"
                     zoom="1,000000"
                     instance="ID2149">
             <zorder>
@@ -1557,12 +1581,18 @@
         <IndexNode expanded="false"/>
       </IndexNode>
       <IndexNode expanded="true">
+        <IndexNode expanded="true"/>
+        <IndexNode expanded="true"/>
+        <IndexNode expanded="true"/>
+        <IndexNode expanded="true"/>
+        <IndexNode expanded="true"/>
+        <IndexNode expanded="true"/>
         <IndexNode expanded="false">
           <IndexNode expanded="true"/>
           <IndexNode expanded="true"/>
           <IndexNode expanded="true"/>
         </IndexNode>
-        <IndexNode expanded="true">
+        <IndexNode expanded="false">
           <IndexNode expanded="false"/>
           <IndexNode expanded="false"/>
           <IndexNode expanded="false"/>

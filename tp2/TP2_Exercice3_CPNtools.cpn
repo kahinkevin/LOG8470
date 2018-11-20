@@ -102,19 +102,6 @@
           <id>INT</id>
           <int/>
         </color>
-        <color id="ID1412312409">
-          <id>INTINF</id>
-          <layout>colset INTINF = intinf;</layout>
-        </color>
-        <color id="ID1412312425">
-          <id>TIME</id>
-          <layout>colset TIME = time;</layout>
-        </color>
-        <color id="ID1412322990">
-          <id>REAL</id>
-          <real/>
-          <layout>colset REAL = real;</layout>
-        </color>
         <color id="ID5">
           <id>STRING</id>
           <string/>
@@ -1649,7 +1636,7 @@
         <transend idref="ID1412343195"/>
         <placeend idref="ID1412343898"/>
         <annot id="ID1412350308">
-          <posattr x="-96,000000"
+          <posattr x="-91,000000"
                    y="108,000000"/>
           <fillattr colour="White"
                     pattern="Solid"
@@ -1660,7 +1647,7 @@
           <textattr colour="Black"
                     bold="false"/>
           <text tool="CPN Tools"
-                version="2.2.0">d0</text>
+                version="2.2.0">true</text>
         </annot>
       </arc>
       <arc id="ID1412351114"
@@ -2117,7 +2104,7 @@
         <transend idref="ID1412628540"/>
         <placeend idref="ID1412634592"/>
         <annot id="ID1412711439">
-          <posattr x="216,000000"
+          <posattr x="221,000000"
                    y="84,000000"/>
           <fillattr colour="White"
                     pattern="Solid"
@@ -2128,7 +2115,7 @@
           <textattr colour="Black"
                     bold="false"/>
           <text tool="CPN Tools"
-                version="2.2.0">d1</text>
+                version="2.2.0">true</text>
         </annot>
       </arc>
       <arc id="ID1412714349"
@@ -3290,14 +3277,14 @@
     </options>
     <binders>
       <cpnbinder id="ID2222"
-                 x="337"
-                 y="70"
-                 width="1310"
-                 height="833">
+                 x="319"
+                 y="41"
+                 width="1510"
+                 height="893">
         <sheets>
           <cpnsheet id="ID2215"
-                    panx="-39,000000"
-                    pany="-82,000000"
+                    panx="-85,000000"
+                    pany="-35,000000"
                     zoom="1,000000"
                     instance="ID2149">
             <zorder>
@@ -3388,9 +3375,6 @@
           <IndexNode expanded="true"/>
         </IndexNode>
         <IndexNode expanded="false">
-          <IndexNode expanded="false"/>
-          <IndexNode expanded="false"/>
-          <IndexNode expanded="false"/>
           <IndexNode expanded="false"/>
           <IndexNode expanded="false"/>
           <IndexNode expanded="false"/>

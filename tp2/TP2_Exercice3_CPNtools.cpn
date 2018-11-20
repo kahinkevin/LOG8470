@@ -7,7 +7,33 @@
              format="6"/>
   <cpnet>
     <globbox>
-      <errordecl id="ID1412586372">var</errordecl>
+      <ml id="ID1413487451">val initQ =
+1&apos;(&quot;CRIT&quot;)
+        <layout>val initQ =
+1&apos;(&quot;CRIT&quot;)</layout>
+      </ml>
+      <ml id="ID1413477076">val initP =
+1&apos;(&quot;CRIT&quot;)
+        <layout>val initP =
+1&apos;(&quot;CRIT&quot;)</layout>
+      </ml>
+      <var id="ID1413466790">
+        <type>
+          <id>CRIT</id>
+        </type>
+        <id>c</id>
+        <layout>var c : CRIT;</layout>
+      </var>
+      <color id="ID1413462689">
+        <id>CRIT</id>
+        <string/>
+        <layout>colset CRIT = string;</layout>
+      </color>
+      <color id="ID1413433749">
+        <id>TOUR</id>
+        <int/>
+        <layout>colset TOUR = int;</layout>
+      </color>
       <color id="ID1412514974">
         <id>DI</id>
         <bool/>
@@ -21,14 +47,14 @@
       <block id="ID1412503925">
         <id>colset IxDI = product i * di;</id>
       </block>
-      <ml id="ID1412561299">val initQ =
+      <ml id="ID1412561299">val initD1 =
 1&apos;(1,false)
-        <layout>val initQ =
+        <layout>val initD1 =
 1&apos;(1,false)</layout>
       </ml>
-      <ml id="ID1412551009">val initP =
+      <ml id="ID1412551009">val initD0 =
 1&apos;(0,false)
-        <layout>val initP =
+        <layout>val initD0 =
 1&apos;(0,false)</layout>
       </ml>
       <block id="ID1412310166">
@@ -99,7 +125,7 @@
                  y="0,000000"
                  hidden="false"/>
         <type id="ID1412342505">
-          <posattr x="-114,000000"
+          <posattr x="-112,500000"
                    y="232,000000"/>
           <fillattr colour="White"
                     pattern="Solid"
@@ -110,7 +136,7 @@
           <textattr colour="Black"
                     bold="false"/>
           <text tool="CPN Tools"
-                version="2.2.0">IxDI</text>
+                version="2.2.0">CRIT</text>
         </type>
         <initmark id="ID1412342506">
           <posattr x="-113,500000"
@@ -147,7 +173,7 @@
                  y="0,000000"
                  hidden="false"/>
         <type id="ID1412342849">
-          <posattr x="74,000000"
+          <posattr x="50,000000"
                    y="232,000000"/>
           <fillattr colour="White"
                     pattern="Solid"
@@ -158,10 +184,10 @@
           <textattr colour="Black"
                     bold="false"/>
           <text tool="CPN Tools"
-                version="2.2.0"/>
+                version="2.2.0">IxDI</text>
         </type>
         <initmark id="ID1412342850">
-          <posattr x="69,000000"
+          <posattr x="55,000000"
                    y="279,000000"/>
           <fillattr colour="White"
                     pattern="Solid"
@@ -172,7 +198,7 @@
           <textattr colour="Black"
                     bold="false"/>
           <text tool="CPN Tools"
-                version="2.2.0"/>
+                version="2.2.0">initD0</text>
         </initmark>
       </place>
       <place id="ID1412343545">
@@ -291,7 +317,7 @@
                  y="0,000000"
                  hidden="false"/>
         <type id="ID1412345327">
-          <posattr x="-90,000000"
+          <posattr x="-110,000000"
                    y="-185,000000"/>
           <fillattr colour="White"
                     pattern="Solid"
@@ -302,7 +328,7 @@
           <textattr colour="Black"
                     bold="false"/>
           <text tool="CPN Tools"
-                version="2.2.0"/>
+                version="2.2.0">TOUR</text>
         </type>
         <initmark id="ID1412345328">
           <posattr x="-95,000000"
@@ -435,7 +461,7 @@
                  y="0,000000"
                  hidden="false"/>
         <type id="ID1412608600">
-          <posattr x="162,000000"
+          <posattr x="138,000000"
                    y="232,000000"/>
           <fillattr colour="White"
                     pattern="Solid"
@@ -446,10 +472,10 @@
           <textattr colour="Black"
                     bold="false"/>
           <text tool="CPN Tools"
-                version="2.2.0"/>
+                version="2.2.0">IxDI</text>
         </type>
         <initmark id="ID1412608601">
-          <posattr x="157,000000"
+          <posattr x="143,000000"
                    y="279,000000"/>
           <fillattr colour="White"
                     pattern="Solid"
@@ -460,7 +486,7 @@
           <textattr colour="Black"
                     bold="false"/>
           <text tool="CPN Tools"
-                version="2.2.0"/>
+                version="2.2.0">initD1</text>
         </initmark>
       </place>
       <place id="ID1412618964">
@@ -483,7 +509,7 @@
                  y="0,000000"
                  hidden="false"/>
         <type id="ID1412618965">
-          <posattr x="320,000000"
+          <posattr x="297,500000"
                    y="232,000000"/>
           <fillattr colour="White"
                     pattern="Solid"
@@ -494,10 +520,10 @@
           <textattr colour="Black"
                     bold="false"/>
           <text tool="CPN Tools"
-                version="2.2.0"/>
+                version="2.2.0">CRIT</text>
         </type>
         <initmark id="ID1412618966">
-          <posattr x="315,000000"
+          <posattr x="297,500000"
                    y="279,000000"/>
           <fillattr colour="White"
                     pattern="Solid"
@@ -508,7 +534,7 @@
           <textattr colour="Black"
                     bold="false"/>
           <text tool="CPN Tools"
-                version="2.2.0"/>
+                version="2.2.0">initQ</text>
         </initmark>
       </place>
       <place id="ID1412634592">
@@ -627,7 +653,7 @@
                  y="0,000000"
                  hidden="false"/>
         <type id="ID1412651425">
-          <posattr x="320,000000"
+          <posattr x="300,000000"
                    y="-185,000000"/>
           <fillattr colour="White"
                     pattern="Solid"
@@ -638,7 +664,7 @@
           <textattr colour="Black"
                     bold="false"/>
           <text tool="CPN Tools"
-                version="2.2.0"/>
+                version="2.2.0">TOUR</text>
         </type>
         <initmark id="ID1412651426">
           <posattr x="315,000000"
@@ -3199,14 +3225,14 @@
     </options>
     <binders>
       <cpnbinder id="ID2222"
-                 x="394"
-                 y="48"
-                 width="1477"
+                 x="217"
+                 y="59"
+                 width="1024"
                  height="941">
         <sheets>
           <cpnsheet id="ID2215"
-                    panx="-44,000000"
-                    pany="-54,000000"
+                    panx="-473,000000"
+                    pany="10,000000"
                     zoom="1,000000"
                     instance="ID2149">
             <zorder>
@@ -3279,6 +3305,10 @@
         <IndexNode expanded="false"/>
       </IndexNode>
       <IndexNode expanded="true">
+        <IndexNode expanded="true"/>
+        <IndexNode expanded="true"/>
+        <IndexNode expanded="true"/>
+        <IndexNode expanded="true"/>
         <IndexNode expanded="true"/>
         <IndexNode expanded="true"/>
         <IndexNode expanded="true"/>

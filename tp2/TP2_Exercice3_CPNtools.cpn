@@ -850,7 +850,7 @@
                   type="solid"/>
         <textattr colour="Black"
                   bold="false"/>
-        <text>begin</text>
+        <text>beginP</text>
         <box w="60.000000"
              h="40.000000"/>
         <binding x="7.000000"
@@ -1072,7 +1072,7 @@
                   type="solid"/>
         <textattr colour="Black"
                   bold="false"/>
-        <text>SC !d1</text>
+        <text>SC is not d1</text>
         <box w="98.000000"
              h="40.000000"/>
         <binding x="7.000000"
@@ -1220,7 +1220,7 @@
                   type="solid"/>
         <textattr colour="Black"
                   bold="false"/>
-        <text>u0</text>
+        <text>beginQ</text>
         <box w="60.000000"
              h="40.000000"/>
         <binding x="7.000000"
@@ -1368,7 +1368,7 @@
                   type="solid"/>
         <textattr colour="Black"
                   bold="false"/>
-        <text>SC with !d0</text>
+        <text>SC is not d0</text>
         <box w="88.000000"
              h="40.000000"/>
         <binding x="7.000000"
@@ -2870,10 +2870,7 @@
         <guideline_elm idref="ID1412608599"/>
       </hguideline>
       <hguideline id="ID1412968554"
-                  y="-328.000000">
-        <guideline_elm idref="ID1414502428"/>
-        <guideline_elm idref="ID1414502429"/>
-      </hguideline>
+                  y="-328.000000"/>
       <hguideline id="ID1413871549"
                   y="-354.000000"/>
       <vguideline id="ID1412444685"
@@ -2900,7 +2897,6 @@
       <vguideline id="ID1412454370"
                   x="-479.000000">
         <guideline_elm idref="ID1412346809"/>
-        <guideline_elm idref="ID1414502429"/>
       </vguideline>
       <vguideline id="ID1412735604"
                   x="376.000000">
@@ -2935,7 +2931,6 @@
       <vguideline id="ID1412869638"
                   x="93.000000">
         <guideline_elm idref="ID1412608599"/>
-        <guideline_elm idref="ID1414502428"/>
       </vguideline>
     </page>
     <instances>
@@ -3192,8 +3187,8 @@
                  height="726">
         <sheets>
           <cpnsheet id="ID2215"
-                    panx="-64.625000"
-                    pany="-111.500000"
+                    panx="-60.625000"
+                    pany="-49.500000"
                     zoom="1.000000"
                     instance="ID2149">
             <zorder>

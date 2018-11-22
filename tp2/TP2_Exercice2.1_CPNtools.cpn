@@ -1116,6 +1116,58 @@
                 version="4.0.1"/>
         </initmark>
       </place>
+      <place id="ID1414792504">
+        <posattr x="135.000000"
+                 y="-1115.000000"/>
+        <fillattr colour="White"
+                  pattern=""
+                  filled="false"/>
+        <lineattr colour="Black"
+                  thick="1"
+                  type="Solid"/>
+        <textattr colour="Black"
+                  bold="false"/>
+        <text>clients qui pensent etre Stromae</text>
+        <ellipse w="270.509576"
+                 h="59.859394"/>
+        <token x="-10.000000"
+               y="0.000000"/>
+        <marking x="0.000000"
+                 y="0.000000"
+                 hidden="false">
+          <snap snap_id="0"
+                anchor.horizontal="0"
+                anchor.vertical="0"/>
+        </marking>
+        <type id="ID1414792505">
+          <posattr x="255.500000"
+                   y="-1145.000000"/>
+          <fillattr colour="White"
+                    pattern="Solid"
+                    filled="false"/>
+          <lineattr colour="Black"
+                    thick="0"
+                    type="Solid"/>
+          <textattr colour="Black"
+                    bold="false"/>
+          <text tool="CPN Tools"
+                version="4.0.1">CLIENT</text>
+        </type>
+        <initmark id="ID1414792506">
+          <posattr x="265.000000"
+                   y="-1084.000000"/>
+          <fillattr colour="White"
+                    pattern="Solid"
+                    filled="false"/>
+          <lineattr colour="Black"
+                    thick="0"
+                    type="Solid"/>
+          <textattr colour="Black"
+                    bold="false"/>
+          <text tool="CPN Tools"
+                version="4.0.1"/>
+        </initmark>
+      </place>
       <trans id="ID1414476037"
              explicit="false">
         <posattr x="-321.000000"
@@ -4220,6 +4272,38 @@
                 version="4.0.1">c</text>
         </annot>
       </arc>
+      <arc id="ID1414800290"
+           orientation="TtoP"
+           order="1">
+        <posattr x="0.000000"
+                 y="0.000000"/>
+        <fillattr colour="White"
+                  pattern=""
+                  filled="false"/>
+        <lineattr colour="Black"
+                  thick="1"
+                  type="Solid"/>
+        <textattr colour="Black"
+                  bold="false"/>
+        <arrowattr headsize="1.200000"
+                   currentcyckle="2"/>
+        <transend idref="ID1414634907"/>
+        <placeend idref="ID1414792504"/>
+        <annot id="ID1414800291">
+          <posattr x="142.000000"
+                   y="-1059.000000"/>
+          <fillattr colour="White"
+                    pattern="Solid"
+                    filled="false"/>
+          <lineattr colour="Black"
+                    thick="0"
+                    type="Solid"/>
+          <textattr colour="Black"
+                    bold="false"/>
+          <text tool="CPN Tools"
+                version="4.0.1">c</text>
+        </annot>
+      </arc>
       <constraints/>
       <group id="ID1414582975"
              name="PP">
@@ -4946,8 +5030,8 @@
                  height="685">
         <sheets>
           <cpnsheet id="ID2215"
-                    panx="-281.338879"
-                    pany="-451.039575"
+                    panx="16.661121"
+                    pany="-282.039575"
                     zoom="1.007080"
                     instance="ID2149">
             <zorder>
